@@ -1,7 +1,6 @@
 package dependencyinjection;
 
-import controllers.MyController;
-import org.springframework.beans.factory.annotation.Autowired;
+import dependencyinjection.controllers.MyController;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ApplicationContext;
