@@ -1,6 +1,6 @@
 package dependencyinjection.controllers;
 
-import dependencyinjection.services.GreetingServiceImpl;
+import dependencyinjection.services.ConstructorInjectedGreetingService;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
@@ -11,7 +11,7 @@ class PropertyInjectedControllerTest {
     @BeforeEach
     void setUp(){
         propertyInjectedController = new PropertyInjectedController();
-        propertyInjectedController.greetingService = new GreetingServiceImpl();
+        propertyInjectedController.greetingService = new ConstructorInjectedGreetingService();
     }
 
     @Test
